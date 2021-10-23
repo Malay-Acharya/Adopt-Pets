@@ -1,14 +1,6 @@
+import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import SearchParams from "./SearchParams";
-
-// const App = () => {
-//   return React.createElement("div", {}, [
-//     React.createElement("h1", {}, "Adopt Me!"),
-//     React.createElement(Pet, { name: "A", animal: "B", breed: "C" }),
-//     React.createElement(Pet, { name: "A", animal: "B", breed: "C" }),
-//     React.createElement(Pet, { name: "A", animal: "BC", breed: "CD" }),
-//   ]);
-// };
 
 const App = () => {
   return (
@@ -19,4 +11,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<StrictMode><App /></StrictMode>, document.getElementById("root"));
